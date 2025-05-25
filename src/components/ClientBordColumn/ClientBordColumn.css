@@ -1,0 +1,27 @@
+.column{
+    width: 24%;
+    border-radius: 1em;
+    padding: 15px;
+
+    background-color: #181818;
+    color: white;
+}
+
+.nameColumn{
+    
+    margin: auto;
+    margin-bottom: 10px;
+
+    text-align: center;
+    
+    width: 80%;
+    padding: 10px;
+    border-radius: 0.5em;
+    
+    background-color: #7C3AED;
+
+}
+.priceColumn{
+    text-align: center;
+    margin-bottom: 10px;
+}

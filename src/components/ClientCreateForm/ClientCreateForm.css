@@ -1,0 +1,35 @@
+.ClientCreateFormContanier{
+    margin-bottom: 20px;
+    border-radius: 1em;
+    padding: 20px;
+    background-color: #181818;
+    width: 70%;
+    
+
+}
+
+.ClientCreateFormTitle{
+    color: white;
+}
+
+.inputClientForm{
+    
+    border-radius: 1em;
+    padding: 10px;
+    background-color: #292727;
+    margin-right: 10px;
+    
+}
+.inputClientForm:hover{
+    border: 3px solid #7C3AED;
+
+    
+}
+.buttonClientForm{
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 1em;
+    background-color: #7C3AED;
+
+}
