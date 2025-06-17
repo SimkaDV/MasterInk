@@ -6,11 +6,10 @@
   "homepage": "https://SimkaDV.github.io/MasterInk",
   "scripts": {
     "dev": "vite",
-    "build": "react-scripts build && move build docs",
-    "lint": "eslint .",
+    "build": "vite build",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "vite build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "framer-motion": "^12.16.0",
