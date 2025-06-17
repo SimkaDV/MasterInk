@@ -1,35 +1,42 @@
 .ClientCreateFormContanier{
-    margin-bottom: 20px;
+    
     border-radius: 1em;
     padding: 20px;
-    background-color: #181818;
-    width: 70%;
+    width: 700px;           /* 30% от ширины окна */
     
-
 }
 
 .ClientCreateFormTitle{
     color: white;
 }
 
-.inputClientForm{
+.inputClientInput{
     
     border-radius: 1em;
-    padding: 10px;
+    padding: 15px;
+
     background-color: #292727;
     margin-right: 10px;
+    margin-bottom: 10px;
+    color: white;
+    
+    border: none;
     
 }
-.inputClientForm:hover{
+.inputClientInput:focus{
     border: 3px solid #7C3AED;
-
+    box-shadow:none;
+    outline: none;
     
 }
+
+
 .buttonClientForm{
     color: white;
     padding: 15px;
     border: none;
     border-radius: 1em;
     background-color: #7C3AED;
-
+    margin-left: 20px;
+    margin-bottom: 20px;
 }

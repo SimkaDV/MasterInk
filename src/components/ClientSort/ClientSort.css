@@ -1,0 +1,55 @@
+.ClientSortContanier {
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+   
+  }
+  
+  .ClientSortBlock {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ClientSortLabel {
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #ccc;
+  }
+  
+  .ClientSortInput {
+    border-radius: 0.75em;
+    padding: 10px 14px;
+    background-color: #292727;
+    color: white;
+    border: none;
+    
+  }
+  
+  .ClientSortInput:focus {
+    border:1px solid #7c3aed;
+    outline: none;
+  }
+  
+  .ClientSortRange {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .buttonClientSort {
+    align-self: flex-start;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 0.75em;
+    background-color: #7c3aed;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .buttonClientSort:hover {
+    background-color: #5b24db;
+  }

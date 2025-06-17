@@ -1,0 +1,16 @@
+.clientBoardTab{
+    position: relative;
+    width: 100%;
+}
+.optionContanier{
+    
+    margin-bottom: 20px;
+    display: flex;
+    position: relative;
+    
+ 
+}
+.elOptionContanier{
+    margin-right: 20px;
+}
+

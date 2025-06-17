@@ -1,0 +1,29 @@
+.btnOptionContanier{
+    display: inline-block;
+   
+    
+}
+
+.btnOption{
+  background-color: none;
+  font-size: 18px;
+  list-style-type: none;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+
+  
+}
+
+.btnOption:hover{
+    background-color: blueviolet;
+    border-radius: 0.5em;
+}
+.ulOption{
+    position: relative;
+    z-index: 2;
+    left: 0; 
+    margin: 0; 
+    
+    width: 150px;
+}

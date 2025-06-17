@@ -1,8 +1,87 @@
-.clientCardContanier{
-    border-radius: 1em;
-    padding: 10px;
+.clientCardContanier {
+    display: flex;
+    flex-direction: column; /* ВНИМАНИЕ: меняем направление */
+    justify-content: space-between;
+    min-height: 200px;
+    position: relative;
+  
+    padding: 16px 20px;
+    margin-bottom: 12px;
+  
+    background-color: #2e2c2c;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  .clientCardContanier:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  .clientCardTop {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .clientCardInfo {
+    display: flex;
+    flex: 1 1 auto;
+    min-width: 0; /* для правильного сжатия */
+    flex-direction: column;
+    gap: 6px;
+    color: #fff;
+    font-family: 'ShareTechMono', monospace;
+    width: 100%;
+  }
+  
+  .clientCardName {
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .clientCardComment {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ccc;
+    width: 250px;
+  }
+  
+  .clientCardPhone,
+  .clientCardPrice {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #aaa;
+  }
+  
+  .btnActiv {
+    margin-left: auto;
+  }
+  .iconCard{
+    width: 30px;
 
-    background-color: #292727;
 
-    margin-bottom: 10px;
-}
+  }
+  
+  .btnCard {
+    margin-top: auto;
+    align-self: flex-start;
+    margin-top: 16px;
+  
+    background-color: #7b2ff7;
+    color: white;
+    font-family: 'ShareTechMono', monospace;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+
+  
+  

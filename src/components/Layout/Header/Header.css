@@ -1,0 +1,18 @@
+.HeaderContenier{
+    display: flex;
+    align-items: center;
+    background-color: #181818;
+    height: 70px;
+    width: 100%;
+    color: white;
+    
+    position: fixed;
+    z-index: 1000;
+    border-bottom: 1px solid blueviolet;
+}
+
+.label{
+    color: blueviolet;
+    margin-left: 40px;
+
+}

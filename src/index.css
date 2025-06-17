@@ -2,10 +2,17 @@
 margin: 0;
 box-sizing: border-box;
 padding: 0;
+font-family: 'ShareTechMono';
 
 }
 
 body{
 
     background-color: #312d2d;
+}
+.WORK{
+    color: red;
+    background-color: white;
+    font-size: 50px;
+    text-align: center;
 }

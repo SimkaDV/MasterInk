@@ -5,6 +5,7 @@
 
     background-color: #181818;
     color: white;
+    min-height: 400px;
 }
 
 .nameColumn{
@@ -25,3 +26,30 @@
     text-align: center;
     margin-bottom: 10px;
 }
+.columnContent {
+    max-height: 65vh; /* или 400px — можно адаптировать */
+    overflow-y: auto;
+    padding-right: 8px; /* Чтобы контент не прилипал к скроллу */
+    position: relative;
+    z-index: 1; /* Поверх других фонов */
+  }
+  
+  .columnContent::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .columnContent::-webkit-scrollbar-track {
+    background: #2a2a2a;
+    border-radius: 4px;
+  }
+  
+  .columnContent::-webkit-scrollbar-thumb {
+    background-color: #7C3AED;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+  
+  .columnContent:hover::-webkit-scrollbar-thumb {
+    background-color: #A78BFA;
+  }
