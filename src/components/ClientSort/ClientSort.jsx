@@ -1,27 +1,42 @@
 import React, { useEffect, useState } from "react"
 import "./ClientSort.css"
 
-function ClientSort({setClientsSort}) {
+function ClientSort({addSetParSort}) {
 
-  const [parSort, setParSort] = useState({
-    name: "",
-    priceFrom: "",
-    priceTo: "",
-    dateFrom: "",
-    dateTo: "",
-  })
+
+  const [parSort, setParSort] = useState( {name: "",
+  priceFrom: "",
+  priceTo: "",
+  dateFrom: "",
+  dateTo: "", })
+  
 
   const handleChange = (e) =>{
     const {name, value} = e.target;
-    setParSort(prev =>({...prev, [name]: value }));
-    setClientsSort(parSort);
-    console.log(parSort)
+    setParSort(prev =>({...prev, [name]: value }))
+    console.log()
 
   }
-  const handleApply = () => {
-    setClientsSort(parSort);
-  };
-  
+ 
+  function setHandleChange(){
+    addSetParSort(parSort)
+  }
+  function clearParSort(){
+    setParSort({name: "",
+    priceFrom: "",
+    priceTo: "",
+    dateFrom: "",
+    dateTo: "", })
+    
+    addSetParSort({name: "",
+    priceFrom: "",
+    priceTo: "",
+    dateFrom: "",
+    dateTo: "", })
+
+  }
+
+ 
 
 
   return (
@@ -80,8 +95,11 @@ function ClientSort({setClientsSort}) {
         />
       </div>
     </div>
-  
-    <button className="buttonClientSort" onClick={handleApply} >Применить</button>
+    <div className="sortBtnContanier">
+      <button className="buttonClientSort" onClick={setHandleChange} >Применить</button>
+      <button className="buttonClientSort" onClick={clearParSort} >Очистить</button>
+    </div>
+    
   </div>
     
   )

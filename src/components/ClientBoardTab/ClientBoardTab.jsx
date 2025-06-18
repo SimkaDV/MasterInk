@@ -43,22 +43,66 @@ function ClientBoardTab() {
 
    //Сортируем клиентов по параметрам
 
-   const [clientsSort, setClientsSort] = useState(clients||null)
+   const [filteredClients, setFilteredClients] = useState(clients||null)
    
-   function filteredClients(){
-      clients.filter(client=>{ 
+   const [parSort, setParSort] = useState(
+    {name: "",
+    priceFrom: "",
+    priceTo: "",
+    dateFrom: "",
+    dateTo: "", })
+   
 
-      })
-
-
+   const addSetParSort = (par) => {
+    setParSort(par)
    }
+
+  
+   
+   useEffect(() => {
+    let result = [...clients]
+    
+    if (parSort.name) {
+      result = result.filter(client => 
+        client.fullName.toLowerCase().includes(parSort.name.toLowerCase())
+      )
+    }
+    
+    if (parSort.priceFrom) {
+      result = result.filter(client => 
+        client.price >= Number(parSort.priceFrom)
+      )
+    }
+    
+    if (parSort.priceTo) {
+      result = result.filter(client => 
+        client.price <= Number(parSort.priceTo)
+      )
+    }
+    
+    if (parSort.dateFrom) {
+      result = result.filter(client => 
+        new Date(client.createdAt) >= new Date(parSort.dateFrom)
+      )
+    }
+    
+    if (parSort.dateTo) {
+      result = result.filter(client => 
+        new Date(client.createdAt) <= new Date(parSort.dateTo)
+      )
+    }
+    
+    setFilteredClients(result)
+  }, [parSort, clients])
+
+  
  
 
   
   return (
     
     <>
-    <MyContext.Provider value={{clientsSort, setClients, clientsStatus, setClientsStatus}}>
+    <MyContext.Provider value={{ setClients, clientsStatus, setClientsStatus}}>
       <div className="clientBoardTab">
         
         <div className="optionContanier">
@@ -67,12 +111,12 @@ function ClientBoardTab() {
             content={<ClientCreateForm addClient = {addClient} addClientStatus={addClientStatus}></ClientCreateForm>}>
           </BtnToggleContent>
           </div>
-          <BtnToggleContent titleContent ={"Сортировать"}  icon="S" setClientsSort={setClientsSort}
-            content={<ClientSort></ClientSort>}>
+          <BtnToggleContent titleContent ={"Сортировать"}  icon="S" 
+            content={<ClientSort addSetParSort={addSetParSort}></ClientSort>}>
           </BtnToggleContent>
         </div>
 
-        <ClientBoard clients={clients} clientsStatus = {clientsStatus}></ClientBoard>
+        <ClientBoard clients={filteredClients} clientsStatus = {clientsStatus}></ClientBoard>
       </div>  
     </MyContext.Provider>
     </>

@@ -18,7 +18,7 @@ function removeClient(clientId){
     ...prev,
     [statusColumn]: prev[statusColumn].filter(c => c !== clientId)
   }))
-  console.log(111)
+  
 }
 
 function changeStatus(clientId){

@@ -32,8 +32,8 @@ function ClientBordColumn(props) {
     statusColumn
   );
   
-  
-  console.log(columnClients)
+ 
+    
 
   
 
@@ -49,7 +49,7 @@ function ClientBordColumn(props) {
   addPrice, [columnClients]
   )
 
-  console.log(price)
+  
 
   return (
     <>

@@ -6,7 +6,7 @@ export function BtnToggleContent({ content, icon, titleContent }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="btnTogCont">
+    <div className={`btnTogCont ${!isOpen ? "btnTogContNoActiv" : ""}`}>
       <div className="btnHeaderRow">
         <button
           className={`btnTog ${isOpen ? "btnActiv" : ""}`}
@@ -36,9 +36,9 @@ export function BtnToggleContent({ content, icon, titleContent }) {
         {isOpen && (
           <motion.div
             key="innerContent"
-            initial={{ height: 0, width: 0}}
-            animate={{ height: "auto",width: "auto"}}
-            exit={{ height: 0, width: 0}}
+            initial={{ height: 0, width: 0, }}
+            animate={{ height: "auto",width: "auto", }}
+            exit={{ height: 0, width: 0,}}
             transition={{ duration: 0.4 }}
             style={{ overflow: "hidden" }}
           >

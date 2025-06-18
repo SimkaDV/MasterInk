@@ -40,16 +40,14 @@
   }
   
   .buttonClientSort {
-    align-self: flex-start;
+
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 0.75em;
     background-color: #7c3aed;
     cursor: pointer;
-    transition: background-color 0.3s;
+    margin-right: 10px;
   }
   
-  .buttonClientSort:hover {
-    background-color: #5b24db;
-  }
+  
