@@ -1,9 +1,10 @@
 import React, { useState } from "react"
 import "./ClientCard.css"
-import BtnOptionCard from "../UI/BtnOptionCard/BtnOptionCard"
-import { Dropdown } from "../UI/Dropdown/Dropdown.jsx"
+
 import { motion, AnimatePresence } from "framer-motion"
-import phoneIcon from '../../assets/telephone.png';
+
+import BtnOptionCard from "../../../UI/BtnOptionCard/BtnOptionCard"
+import  Dropdown from "../../../UI/Dropdown/Dropdown.jsx"
 
 import { useNavigate } from "react-router-dom"
 
@@ -14,7 +15,7 @@ function ClientCard(props) {
   const navigate = useNavigate()
   
   const goToClientTab = (clientId) => {
-    navigate(`/client/${clientId}`)
+    navigate(`/client/${clientId}`,{state: {client}})
   }
 
 

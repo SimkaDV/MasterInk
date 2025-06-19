@@ -1,7 +1,9 @@
 import React from "react"
-import { useState, useContext } from "react"
 import "./BtnOptionCard.css"
-import { MyContext } from "../../ClientBoardTab/ClientBoardTab"
+
+import { useState, useContext } from "react"
+
+import { MyContext } from "../../../pages/ClientBoardTab/ClientBoardTab"
 
 
 function BtnOptionCard({clientId, statusColumn}){

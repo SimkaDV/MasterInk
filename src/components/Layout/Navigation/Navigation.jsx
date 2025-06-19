@@ -1,11 +1,14 @@
 import React from "react"
+import "./Navigation.css"
+
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import "./Navigation.css"
-import calendarIcon from '../../../assets/calendar.png';
-import peopleIcon from '../../../assets/people-icon.png';
-
 import { Link, useLocation } from "react-router-dom";
+
+
+import calendarIcon from '../../../assets/icons/calendar.png';
+import peopleIcon from '../../../assets/icons/people-icon.png';
+
 
 function Navigation() {
 

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import "./BtnToggleContent.css";
 
-export function BtnToggleContent({ content, icon, titleContent }) {
+import { motion, AnimatePresence } from "framer-motion";
+
+
+function BtnToggleContent({ content, icon, titleContent }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -49,3 +51,5 @@ export function BtnToggleContent({ content, icon, titleContent }) {
     </div>
   );
 }
+
+export default BtnToggleContent;

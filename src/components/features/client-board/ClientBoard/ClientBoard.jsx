@@ -1,6 +1,7 @@
 import React from "react"
 import "./ClientBoard.css"
-import ClientBordColumn from "../ClientBordColumn/ClientBordColumn.jsx"
+
+import ClientBordColumn from "../ClientBoardColumn/ClientBoardColumn.jsx"
 
 function ClientBoard({clients, clientsStatus}) {
 

@@ -1,10 +1,13 @@
-import './App.css'
+import './assets/styles/App.css'
+
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+
 import Navigation from './components/Layout/Navigation/Navigation'
 import Header from './components/Layout/Header/Header'
-import ClientBoardTab from './components/ClientBoardTab/ClientBoardTab'
-import CalendarTab from './components/CalendarTab/CalendarTab'
-import ClientTab from './components/ClientTab/ClientTab'
+
+import ClientBoardTab from './pages/ClientBoardTab/ClientBoardTab.jsx'
+import CalendarTab from './pages/CalendarTab/CalendarTab.jsx'
+import ClientTab from './pages/ClientTab/ClientTab'
 
 
 function App() {

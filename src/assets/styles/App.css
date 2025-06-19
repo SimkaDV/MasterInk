@@ -8,7 +8,7 @@ button{
 }
 @font-face {
     font-family: 'ShareTechMono';
-    src: url('./fonts/ShareTechMono.otf') format('opentype');
+    src: url('../fonts/ShareTechMono.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
   }
@@ -16,14 +16,12 @@ button{
   body {
     font-family: 'ShareTechMono', monospace;
   }
+
   .layout{
     margin-top: 70px;
 
   }
-  .navigationPanel{
-    
-
-  }
+  
   .mainContent{
     margin-left: 60px;
     padding: 20px;

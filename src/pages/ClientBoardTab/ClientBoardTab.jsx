@@ -1,11 +1,13 @@
 import React from "react"
-import { useState, useEffect, useContext } from "react"
-import ClientBoard from "../ClientBoard/ClientBoard"
-import ClientCreateForm from "../ClientCreateForm/ClientCreateForm"
 import "./ClientBoardTab.css"
-import { createContext } from "react"
-import { BtnToggleContent } from "../UI/BtnToggleContent/BtnToggleContent"
-import ClientSort from "../ClientSort/ClientSort"
+import { useState, useEffect, useContext, createContext  } from "react"
+
+import ClientCreateForm from "../../components/features/client-board/ClientCreateForm/ClientCreateForm"
+import ClientSort from "../../components/features/client-board/ClientSort/ClientSort"
+import ClientBoard from "../../components/features/client-board/ClientBoard/ClientBoard"
+
+import BtnToggleContent from "../../components/UI/BtnToggleContent/BtnToggleContent"
+
 
 
 export const MyContext = createContext();

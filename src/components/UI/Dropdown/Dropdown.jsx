@@ -1,7 +1,8 @@
-import { useState } from "react";
 import "./Dropdown.css";
+import { useState } from "react";
 
-export function Dropdown({ buttonLabel = "⋮", children }) {
+
+function Dropdown({ buttonLabel = "⋮", children }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -29,3 +30,5 @@ export function Dropdown({ buttonLabel = "⋮", children }) {
     </div>
   );
 }
+
+export default Dropdown

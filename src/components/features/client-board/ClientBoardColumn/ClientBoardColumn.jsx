@@ -1,7 +1,7 @@
 import React from "react"
-import { useMemo } from "react"
+import "./ClientBoardColumn.css"
+
 import { useState, useEffect } from "react"
-import "./ClientBordColumn.css"
 import { motion, AnimatePresence } from "framer-motion"
 
 import ClientCard from "../ClientCard/ClientCard.jsx"
@@ -12,7 +12,7 @@ import ClientCard from "../ClientCard/ClientCard.jsx"
 
 
 
-function ClientBordColumn(props) {
+function ClientBoardColumn(props) {
   const {titleColumn, statusColumn, clients, clientsStatus} = props
   
   
@@ -82,4 +82,4 @@ function ClientBordColumn(props) {
   )
 }
 
-export default ClientBordColumn
+export default ClientBoardColumn

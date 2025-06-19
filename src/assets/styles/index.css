@@ -6,6 +6,7 @@ font-family: 'ShareTechMono';
 
 }
 
+
 body{
 
     background-color: #312d2d;
@@ -13,12 +14,9 @@ body{
 body::-webkit-scrollbar{
     background-color: #3f3d3d;
     padding-top: 50px;
-
-    
 }
 body::-webkit-scrollbar-track{
     cursor: pointer;
-
 }
 body::-webkit-scrollbar-thumb{
     border-radius: 1em;
@@ -26,6 +24,11 @@ body::-webkit-scrollbar-thumb{
     cursor: pointer;
 
 }
+
+
+
+
+
 .WORK{
     color: red;
     background-color: white;
